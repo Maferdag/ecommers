@@ -9,6 +9,18 @@ text-align: center;
 color: #333;
 }
 
+.carouselExample {
+    max-width: 900px;   /* ancho del carrusel */
+    margin: center;       /* lo centra */
+  }
+
+.carouselExample .carousel-item img {
+    height: 350px;      /* alto de las imágenes */
+    object-fit: cover;  /* evita deformación */
+  }
+
+
+  
 .product-grid {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
