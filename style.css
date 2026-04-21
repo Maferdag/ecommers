@@ -11,7 +11,7 @@ color: #333;
 
 .carouselExample {
     max-width: 900px;   /* ancho del carrusel */
-    margin: center;       /* lo centra */
+    margin: 0 auto;       /* lo centra */
   }
 
 .carouselExample .carousel-item img {
@@ -79,4 +79,142 @@ border-radius: 6px;
 .product-card .text-center {
 margin-top: auto;
 }
+
+
+/* CARRITO*/
+.cart {
+    flex: 1;
+    /* ocupa menos espacio */
+  
+    background: white;
+    /* fondo blanco */
+  
+    padding: 15px;
+    /* espacio interno */
+  
+    border-radius: 10px;
+    /* bordes redondeados */
+  
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /* sombra */
+  }
+  
+  /* lista del carrito */
+  
+  #cart-list {
+    list-style: none;
+    /* sin viñetas */
+  
+    padding: 0;
+    /* sin espacio */
+  }
+  
+  /* cada item */
+  
+  #cart-list li {
+    display: flex;
+    /* en fila */
+  
+    justify-content: space-between;
+    /* separa elementos */
+  
+    margin-bottom: 10px;
+    /* espacio inferior */
+  }
+
+  .cart button {
+    background-color: #2c7a7b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background-color: #2c7a7b;
+}
+
+
+  /* ===== MODAL ===== */
+ .modal {
+    display: none;
+    /* oculto por defecto */
+  
+    position: fixed;
+    /* encima de todo */
+  
+    inset: 0;
+    /* ocupa toda la pantalla */
+  
+    background: rgba(0,0,0,0.5);
+    /* fondo oscuro transparente */
+    margin: 100px auto;
+  }
+  
+  /* caja del modal */
+  
+  .modal-content {
+    background: white;
+    /* fondo blanco */
+  
+    width: 300px;
+    /* ancho fijo */
+  
+    margin: 100px auto;
+    /* centrado */
+  
+    padding: 20px;
+    /* espacio interno */
+  
+    border-radius: 10px;
+    /* bordes suaves */
+  }
+  
+  /* inputs */
+  
+  .modal-content input {
+    width: 100%;
+    /* ocupan todo el ancho */
+  
+    margin: 5px 0;
+    /* espacio vertical */
+  
+    padding: 8px;
+    /* tamaño interno */
+  
+    border: 1px solid #ddd;
+    /* borde suave */
+  
+    border-radius: 6px;
+    /* bordes redondeados */
+  }
+
+
+  .modal-button {
+    margin-top: 10px;
+    /* separación superior */
+  
+    padding: 8px;
+    /* tamaño interno */
+  
+    background: #2c7b70;
+    /* color principal */
+  
+    color: white;
+    /* texto blanco */
+  
+    border: none;
+    /* sin borde */
+  
+    border-radius: 6px;
+    /* bordes suaves */
+  
+    cursor: pointer;
+    /* mano al pasar */
+  }
+  
+  .modal-button:hover {
+   transform: translateY(-5px);
+  }
 

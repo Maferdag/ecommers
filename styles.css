@@ -1,0 +1,206 @@
+/* ===== ESTILO GENERAL ===== */
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    /* Fuente moderna */
+  
+    background: #f5f5f5;
+    /* Fondo gris claro */
+  
+    margin: 0;
+    /* Quita espacio por defecto */
+  }
+  
+  /* ===== TÍTULO ===== */
+  
+  h1 {
+    text-align: center;
+    /* Centra texto */
+  
+    padding: 20px;
+    /* Espacio interno */
+  
+    background: white;
+    /* Fondo blanco */
+  
+    border-bottom: 1px solid #ddd;
+    /* Línea inferior */
+  }
+  
+  /* ===== CONTENEDOR PRINCIPAL ===== */
+  
+  .container {
+    display: flex;
+    /* Coloca productos y carrito lado a lado */
+  
+    gap: 20px;
+    /* Espacio entre columnas */
+  
+    padding: 20px;
+    /* Espacio interno */
+  }
+  
+  /* ===== PRODUCTOS ===== */
+  
+  .product-grid {
+    flex: 2;
+    /* Ocupa más espacio que el carrito */
+  
+    display: grid;
+    /* Usa cuadrícula */
+  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* columnas responsivas */
+  
+    gap: 15px;
+    /* separación entre tarjetas */
+  }
+  
+  /* TARJETAS */
+  
+  .product-card {
+    background: white;
+    /* fondo blanco */
+  
+    padding: 15px;
+    /* espacio interno */
+  
+    border-radius: 10px;
+    /* bordes redondeados */
+  
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /* sombra suave */
+  }
+  
+  /* EFECTO HOVER */
+  
+  .product-card:hover {
+    transform: translateY(-3px);
+    /* se levanta un poco */
+  }
+  
+  /* ===== BOTONES ===== */
+  
+  button {
+    margin-top: 10px;
+    /* separación superior */
+  
+    padding: 8px;
+    /* tamaño interno */
+  
+    background: #2c7a7b;
+    /* color principal */
+  
+    color: white;
+    /* texto blanco */
+  
+    border: none;
+    /* sin borde */
+  
+    border-radius: 6px;
+    /* bordes suaves */
+  
+    cursor: pointer;
+    /* mano al pasar */
+  }
+  
+  button:hover {
+    background: #225e61;
+    /* color más oscuro al pasar */
+  }
+  
+  /* ===== CARRITO ===== */
+  
+  .cart {
+    flex: 1;
+    /* ocupa menos espacio */
+  
+    background: white;
+    /* fondo blanco */
+  
+    padding: 15px;
+    /* espacio interno */
+  
+    border-radius: 10px;
+    /* bordes redondeados */
+  
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /* sombra */
+  }
+  
+  /* lista del carrito */
+  
+  #cart-list {
+    list-style: none;
+    /* sin viñetas */
+  
+    padding: 0;
+    /* sin espacio */
+  }
+  
+  /* cada item */
+  
+  #cart-list li {
+    display: flex;
+    /* en fila */
+  
+    justify-content: space-between;
+    /* separa elementos */
+  
+    margin-bottom: 10px;
+    /* espacio inferior */
+  }
+  
+  /* ===== MODAL ===== */
+  
+  .modal {
+    display: none;
+    /* oculto por defecto */
+  
+    position: fixed;
+    /* encima de todo */
+  
+    inset: 0;
+    /* ocupa toda la pantalla */
+  
+    background: rgba(0,0,0,0.5);
+    /* fondo oscuro transparente */
+  }
+  
+  /* caja del modal */
+  
+  .modal-content {
+    background: white;
+    /* fondo blanco */
+  
+    width: 300px;
+    /* ancho fijo */
+  
+    margin: 100px auto;
+    /* centrado */
+  
+    padding: 20px;
+    /* espacio interno */
+  
+    border-radius: 10px;
+    /* bordes suaves */
+  }
+  
+  /* inputs */
+  
+  .modal-content input {
+    width: 100%;
+    /* ocupan todo el ancho */
+  
+    margin: 5px 0;
+    /* espacio vertical */
+  
+    padding: 8px;
+    /* tamaño interno */
+  
+    border: 1px solid #ddd;
+    /* borde suave */
+  
+    border-radius: 6px;
+    /* bordes redondeados */
+  }

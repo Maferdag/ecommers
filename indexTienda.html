@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="Bienvenida.png" class="d-block w-100" alt="Bienvenida">
+    </div>
+
+    <div class="carousel-item">
+      <img src="Publi1.jpg" class="d-block w-100" alt="Chico corriendo">
+    </div>
+
+    <div class="carousel-item">
+      <img src="publi2.png" class="d-block w-100" alt="Marcas deportivas">
+    </div>
+
+    <div class="carousel-item">
+      <img src="publi3.jpg" class="d-block w-100" alt="Descuentos">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="d-flex flex-wrap gap-2">
+
+  <!-- Ropa deportiva -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Ropa</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Poleras</a></li>
+      <li><a class="dropdown-item" href="#">Shorts</a></li>
+      <li><a class="dropdown-item" href="#">Chaquetas</a></li>
+    </ul>
+  </div>
+
+  <!-- Relojes -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-info">Relojes</button>
+    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+      <li><a class="dropdown-item" href="#">Running</a></li>
+      <li><a class="dropdown-item" href="#">Fitness</a></li>
+    </ul>
+  </div>
+
+  <!-- Termos -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-warning">Termos</button>
+    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Acero inoxidable</a></li>
+      <li><a class="dropdown-item" href="#">Botellas</a></li>
+      <li><a class="dropdown-item" href="#">Shakers</a></li>
+    </ul>
+  </div>
+
+  <!-- Bolsos -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary">Bolsos</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Mochilas</a></li>
+      <li><a class="dropdown-item" href="#">Bolsos deportivos</a></li>
+      <li><a class="dropdown-item" href="#">Riñoneras</a></li>
+    </ul>
+  </div>
+
+  <!-- Zapatillas -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Zapatillas</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Running</a></li>
+      <li><a class="dropdown-item" href="#">Training</a></li>
+      <li><a class="dropdown-item" href="#">Outdoor</a></li>
+    </ul>
+  </div>
+
+  <!-- Toallas -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-dark">Toallas</button>
+    <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Microfibra</a></li>
+      <li><a class="dropdown-item" href="#">Gym</a></li>
+    </ul>
+  </div>
+  <!-- Candados -->
+  <div class="btn-group">
+    <button type="button" class="btn btn-success">Candados</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Con clave</a></li>
+      <li><a class="dropdown-item" href="#">Con llave</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<h1>Productos Destacados</h1>
+
+<div class="product-grid">
+
+<div class="product-card">
+    <h3>Camiseta clásica</h3>
+    <p class="description">Camiseta de algodón 100%, cómoda y resistente.</p>
+    <p class="price">$19.99</p>
+    <img src="Camisa.jpg" alt="Camisa blanca">
+  <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Camiseta clásica', 19.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Zapatillas Urbanas</h3>
+    <p class="description">Diseño moderno con suela antideslizante.</p>
+    <p class="price">$49.99</p>
+    <img src="Urbanas.jpg" alt="Zapatillas urbanas">
+
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Zapatillas Urbanas', 49.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Mochila deportiva</h3>
+    <p class="description">Espaciosa y resistente al agua.</p>
+    <p class="price">$34.99</p>
+    <img src="mochila.webp" alt="Mochila deportiva">
+  <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Mochila deportiva', 34.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Reloj digital</h3>
+    <p class="description">Funcional y elegante.</p>
+    <p class="price">$59.99</p>
+    <img src="reloj.jpg" alt="Reloj digital">
+   <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Reloj digital', 59.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Toalla blanca</h3>
+    <p class="description">Ultra absorbente, algodón y bambú.</p>
+    <p class="price">$18.99</p>
+    <img src="Toalla.webp" alt="Toalla">
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Toalla blanca', 18.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Falda deportiva</h3>
+    <p class="description">Cómoda, ligera y moderna.</p>
+    <p class="price">$35.99</p>
+    <img src="falda.webp" alt="Falda deportiva">
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Falda deportiva', 35.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Termo deportivo</h3>
+    <p class="description">Ligero y de gran capacidad.</p>
+    <p class="price">$22.99</p>
+    <img src="termoDepor.jpg" alt="Termo deportivo">
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Termo deportivo', 22.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Termo Stanley</h3>
+    <p class="description">Resistente y práctico.</p>
+    <p class="price">$25.99</p>
+    <img src="Stanley.jpg" alt="Termo Stanley">
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Termo Stanley', 25.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Audífonos inalámbricos</h3>
+    <p class="description">Resistentes al agua y seguros.</p>
+    <p class="price">$50.99</p>
+    <img src="Audifonos.webp" alt="Audífonos inalámbricos">
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Audifonos inalámbricos', 50.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <h3>Candado</h3>
+    <p class="description">Seguro con clave numérica.</p>
+    <p class="price">$12.99</p>
+    <img src="candado.webp" alt="Candado">
+    <div class="text-center mt-3">
+        <button class="btn btn-success" onclick="addToCart('Candado', 12.99)">
+            Añadir al carrito
+        </button>
+    </div>
+</div>
+
+ <div class="cart">
+    <!-- Sección del carrito -->
+
+      <h2>🛍 Carrito</h2>
+      <!-- Título del carrito -->
+
+      <ul id="cart-list"></ul>
+      <!-- Lista vacía donde JS insertará productos -->
+
+      <p id="total">Total: $0</p>
+      <!-- Muestra el total calculado -->
+
+      <button onclick="openPayment()">
+      <!-- Abre el modal de pago -->
+
+        Pagar
+      </button>
+
+    </div>
+
+</div>
+
+<div id="payment-modal" class="modal">
+  <!-- Ventana emergente de pago -->
+
+    <div class="modal-content">
+    <!-- Caja del modal -->
+
+      <h3>💳 Pago simulado</h3>
+      <!-- Título del pago -->
+
+      <input id="card-number" placeholder="Número tarjeta">
+      <!-- Input número de tarjeta -->
+
+      <input id="card-name" placeholder="Titular">
+      <!-- Input nombre del titular -->
+
+      <input id="card-exp" placeholder="MM/AA">
+      <!-- Fecha de expiración -->
+
+      <input id="card-cvv" placeholder="CVV">
+      <!-- Código de seguridad -->
+
+      <button onclick="processPayment()">
+      <!-- Botón que procesa el pago -->
+
+        Confirmar pago
+      </button>
+
+      <button onclick="closePayment()">
+      <!-- Botón para cerrar modal -->
+
+        Cancelar
+      </button>
+
+      <p id="payment-status"></p>
+      <!-- Mensaje de estado del pago -->
+
+    </div>
+
+  </div>
+
+ 
+
+  <script src="script.js"></script>
+  <!-- Conecta la lógica JavaScript -->
+
+
+
+<h2 class="mt-5 text-center">Preguntas Frecuentes</h2>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+        ¿Cómo puedo comprar en la tienda?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Solo debes seleccionar un producto y hacer clic en "Añadir al carrito". Luego completas tus datos para finalizar la compra.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+        ¿Los productos son de buena calidad?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Sí, todos nuestros productos pasan controles de calidad para asegurar durabilidad y buen rendimiento.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+        ¿Cuánto demora el envío?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        El envío tarda entre 2 y 5 días hábiles dependiendo de tu ubicación.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour">
+        ¿Puedo devolver un producto?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Sí, puedes solicitar devolución dentro de los primeros 10 días si el producto está en buen estado.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive">
+        ¿Qué métodos de pago aceptan?
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Aceptamos tarjetas de crédito, débito y transferencias bancarias.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
